@@ -3,6 +3,8 @@ import * as React from "react";
 
  export function Studentlist(){
     const [student,setstudent]=useState()
+    
+    // getting students using get method from heroku//
     const getstudent=()=>{
         fetch("https://jgvv-database.herokuapp.com/students",{method:"GET"})
         .then((stu)=>stu.json())
